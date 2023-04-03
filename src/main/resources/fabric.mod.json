@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "realhands",
+	"version": "${version}",
+	"name": "RealHands",
+	"description": "Real hands in Minecraft? What!",
+	"authors": [
+		"StakeTheSteak"
+	],
+	"contact": {
+		"homepage": "https://www.limitlesstextures.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/realhands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.limitless.RealHands"
+		]
+	},
+	"mixins": [
+		"realhands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
