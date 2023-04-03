@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 
 public class RealHands implements ModInitializer {
 
-	private static final Identifier IMAGE = new Identifier("realhands:textures/gui/hand.png");
+	public static final Identifier IMAGE = new Identifier("realhands:assets/textures/gui/hand.png");
 	private Method renderHandMethod;
 
 	@Override
@@ -29,6 +29,7 @@ public class RealHands implements ModInitializer {
 
 		HudRenderCallback.EVENT.register((matrixStack, delta) -> renderCustomArm(matrixStack));
 
+
 	}
 
 	private void renderCustomArm(MatrixStack stack) {
@@ -40,7 +41,7 @@ public class RealHands implements ModInitializer {
 			e.printStackTrace();
 		}
 
-		Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas(IMAGE).apply(new Identifier("realhands", "textures/gui/hand.png"));
+		Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas(IMAGE).apply(new Identifier("realhands", "assets/realhands/textures/gui/hand.png"));
 		BufferBuilder bufferBuilder = Tessellator.getInstance().getBuffer();
 		bufferBuilder.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE);
 		bufferBuilder.vertex(0, 0, 0).texture(sprite.getMinU(), sprite.getMinV()).next();
