@@ -7,4 +7,8 @@ public class HandModel {
         quads = new float[][]{
         };
     }
+
+    public void renderHand(float stack) {
+        // Code to render the hand model goes here
+    }
 }

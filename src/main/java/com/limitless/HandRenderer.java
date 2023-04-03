@@ -5,9 +5,7 @@ import net.minecraft.client.render.*;
 import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import org.joml.Vector3f;
 import net.minecraft.util.math.Direction;
-
 
 import static com.limitless.RealHands.IMAGE;
 
