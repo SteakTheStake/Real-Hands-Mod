@@ -3,7 +3,7 @@
 	"package": "com.limitless.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"RealHandsMixin"
+
 	],
 	"injectors": {
 		"defaultRequire": 1
